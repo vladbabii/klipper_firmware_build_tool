@@ -6,11 +6,12 @@ DIR_FIRMWARE=/home/pi/printer_data/config/_other/firmware
 DIR_BOARDS=/home/pi/printer_data/config/_other/boards
 DIR_KLIPPER=/home/pi/klipper
 MAKE_LOG=/tmp/last_make.txt
+DATE_PARAM="'%Y-%m-%d'"
 
 ### CONFIG END
 
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
-DATE=$(date +'%Y-%m-%d')
+DATE=$(date +$DATE_PARAM)
 
 echo "Date: $DATE"
 
