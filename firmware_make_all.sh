@@ -2,8 +2,8 @@
 
 #E CONFIG START
 
-DIR_FIRMWARE=/home/pi/printer_data/config/_other/firmware
-DIR_BOARDS=/home/pi/printer_data/config/_other/boards
+DIR_FIRMWARE=/home/pi/printer_data/config/firmware
+DIR_BOARDS=/home/pi/printer_data/config/boards
 DIR_KLIPPER=/home/pi/klipper
 MAKE_LOG=/tmp/last_make.txt
 DATE_PARAM="'%Y-%m-%d'"
