@@ -37,6 +37,7 @@ generates subfolders like
 ```
 
 
+
 to include also hour and minute
 ```
 DATE_PARAM="'%Y-%m-%d-%H-%M'"
