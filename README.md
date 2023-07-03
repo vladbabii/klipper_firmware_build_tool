@@ -1,4 +1,6 @@
 # Klipper Firmware Build Tool
+![built firmware list example](https://github.com/vladbabii/klipper_firmware_build_tool/blob/main/images/firmwares_built.png)
+
 
 # Overview
 This script allows you to build multiple firmwares at once automatically.
