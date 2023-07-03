@@ -24,3 +24,25 @@ when needing to rebuild firmwares in the future just run firmware_make_all again
 * DIR_BOARDS - where the folder that contains subfolders per board are
 * DIR_KLIPPER - where the klipper folder is
 * MAKE_LOG - where the build log will be saved temporarely
+
+DATE_PARAM allows you to set subfolder naming for built firmwares
+
+for daily firmwares
+```
+DATE_PARAM="'%Y-%m-%d'"
+```
+generates subfolders like
+```
+2023-07-03
+```
+
+
+to include also hour and minute
+```
+DATE_PARAM="'%Y-%m-%d-%H-%M'"
+```
+generates subfolders like
+```
+2023-07-03-13-56
+```
+
