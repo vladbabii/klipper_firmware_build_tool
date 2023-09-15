@@ -6,7 +6,8 @@ DIR_FIRMWARE=/home/pi/printer_data/config/firmware
 DIR_BOARDS=/home/pi/printer_data/config/boards
 DIR_KLIPPER=/home/pi/klipper
 MAKE_LOG=/tmp/last_make.txt
-DATE_PARAM="'%Y-%m-%d'"
+DATE_PARAM="%Y-%m-%d"
+#!/bin/bash
 
 ### CONFIG END
 
@@ -35,8 +36,7 @@ do
         echo "  done"
       fi
 
-
-      cd $DIR_KLIPPER  | sed 's/^/    /'
+      cd $DIR_KLIPPER
       echo "  cleaning make..."
       make clean  | sed 's/^/    /'
 
@@ -57,8 +57,8 @@ do
       then
         echo " .. created file exists!"
 
-        CFF=$(basename -- "$CREATED")
-        CFE="${CFF##*.}"
+	CFF=$(basename -- "$CREATED")
+ 	CFE="${CFF##*.}"
         CFN="${CFF%.*}"
         echo " .. full filename: $CFF"
         echo " .. .. extension: $CFE"
